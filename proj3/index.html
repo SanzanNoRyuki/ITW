@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>John Doe</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Roman Fulla"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Montserrat:wght@600&family=Roboto&display=swap&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- Global navigation -->
+		<nav id="globalNavigation" class="navigation">
+			<div class="content">
+				<div id="globalLogo" class="logo">
+					<a href="https://www.stud.fit.vutbr.cz/~xfulla00/new/index.html"><img width="175" height="175" src="img/avatar.jpg" alt="Avatar - John Doe"></a>
+				</div>
+				<div id="globalTitle" class="title">
+					<h2><a href="https://www.stud.fit.vutbr.cz/~xfulla00/new/index.html">John Doe</a></h2>
+				</div>
+				<a class="icon" onclick="hamburgerMenuCheck()"><i id="globalBurgerBars" class="fa fa-bars"></i></a>
+				<ul id="globalMenu" class="menu">
+					<li><a onclick="smoothScrolling('about')">About</a></li>
+					<li><a onclick="smoothScrolling('skills')">Skills</a></li>
+					<li><a onclick="smoothScrolling('interests')">Interests</a></li>
+					<li><a onclick="smoothScrolling('experience')">Experience</a></li>
+					<li><a onclick="smoothScrolling('contact')">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Main content -->
+		<main>
+			<!-- No script notification -->
+			<noscript>
+				Your browser does not support JavaScript. Website might appear broken & not work correctly.<br>
+				Please enable it for full experience.
+			</noscript>
+
+			<!--
+			<div id="noscript">
+				Your browser does not support JavaScript. Website might appear broken & not work correctly.<br>
+				Please enable it for full experience.
+			</div>
+			-->
+
+			<!-- Header -->
+			<header id="header">
+				<div class="content">
+					<h1><a href="https://www.stud.fit.vutbr.cz/~xfulla00/new/index.html">John Doe</a></h1>
+				</div>
+			</header>
+
+			<!-- About -->
+			<section id="about">
+				<div class="content">
+					<h2>About</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum. Quisque in
+						eros non purus egestas varius. Phasellus vehicula, ante et pharetra
+						condimentum, odio massa molestie libero, a pretium ex neque at
+						libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Sed malesuada lorem sapien, at viverra tellus sodales ac. Nulla
+						sodales tortor in tristique porta. Etiam ut mi tortor. Aenean quis
+						posuere nisl. Nunc massa nunc, faucibus sit amet fermentum et,
+						tincidunt quis nulla. Orci varius natoque penatibus et magnis dis
+						parturient montes, nascetur ridiculus mus. Nunc mattis vel odio non
+						scelerisque. Vivamus dictum nulla sed tincidunt imperdiet. Sed
+						vulputate tellus neque, fermentum dignissim erat sagittis sed. Cras
+						ut odio ut libero interdum ultricies vel eu ligula. Fusce hendrerit
+						molestie consectetur. Sed varius ex nec turpis porttitor, eu
+						fringilla diam ultrices.
+					</p>
+				</div>
+			</section>
+
+			<!-- Skills -->
+			<section id="skills">
+				<div class="content">
+					<h2>Skills</h2>
+					<nav id="skillNavigation" class="localNavigation navigation">
+						<ul id="skillMenu" class="localMenu menu">
+							<li><a onclick="smoothScrolling('knowledge')">Industry Knowledge</a></li>
+							<li><a onclick="smoothScrolling('tools')">Tools & Technologies</a></li>
+							<li><a onclick="smoothScrolling('languages')">Languages</a></li>
+						</ul>
+					</nav>
+					<div id="knowledge" class="subsection">
+						<h3>Industry Knowledge</h3>
+						<ul id="knowledgeList" class="skillList">
+							<li>Information Technology</li>
+							<li>Software Development</li>
+							<li>Game Development</li>
+							<li>Programming</li>
+							<li>Retail</li>
+						</ul>
+					</div>
+					<div id="tools" class="subsection">
+						<h3>Tools & Technologies</h3>
+						<ul id="toolsList" class="skillList">
+							<li>C</li>
+							<li>C#</li>
+							<li>C++</li>
+							<li>CSS</li>
+							<li>Flask</li>
+							<li>Git</li>
+							<li>HTML</li>
+							<li>JavaScript</li>
+							<li>PHP</li>
+							<li>Python</li>
+							<li>Unity</li>
+						</ul>
+					</div>
+					<div id="languages" class="subsection">
+						<h3>Languages</h3>
+						<dl id="languageList" class="skillList">
+							<dt>Czech</dt>
+							<dd>Professional working proficiency</dd>
+							<dt>English</dt>
+							<dd>Professional working proficiency</dd>
+							<dt>Russian</dt>
+							<dd>Elementary proficiency</dd>
+							<dt>Slovak</dt>
+							<dd>Native proficiency</dd>
+							<dt>Spanish</dt>
+							<dd>Elementary proficiency</dd>
+						</dl>
+					</div>
+				</div>
+			</section>
+
+			<!-- Interests -->
+			<section id="interests">
+				<div class="content">
+					<h2>Interests</h2>
+					<p>
+						Nunc accumsan commodo diam a efficitur. Pellentesque habitant morbi
+						tristique senectus et netus et malesuada fames ac turpis egestas.
+						Pellentesque vitae felis auctor dolor vehicula egestas ut et neque.
+						Vestibulum pharetra elit id tincidunt pharetra. Donec feugiat congue
+						nisl eget aliquet. Praesent sit amet lacinia purus.<br>
+						Duis vulputate vitae libero ut gravida. Integer varius nibh sed
+						tortor ultrices tempus. Aenean quis tincidunt elit. Proin luctus
+						mattis ante, iaculis euismod lorem tincidunt id. Quisque felis
+						magna, consectetur fermentum consectetur id, aliquam et felis.
+						Curabitur id nunc imperdiet, vestibulum libero vitae, accumsan mi.
+						Ut id neque enim. Etiam et arcu nisi. Etiam sagittis, neque eget
+						pharetra ultrices, elit leo iaculis arcu, et placerat libero tortor
+						nec dui. Nam lacinia urna lectus, pulvinar porttitor quam porta
+						ut.<br>
+						Nunc nec mauris a nisl convallis varius. Praesent elementum vitae
+						urna at luctus. Phasellus luctus posuere nisl quis ullamcorper.
+						Donec in tellus enim. Morbi sed luctus mauris, a imperdiet nisl.
+						Donec efficitur nibh et nulla condimentum porttitor. Vivamus rutrum
+						ipsum accumsan malesuada porttitor. Nullam convallis ut ex vehicula
+						faucibus. Maecenas tincidunt, odio ut volutpat aliquet, metus nisl
+						euismod ipsum, at venenatis est turpis sit amet nisl. Sed leo nunc,
+						laoreet eget pulvinar nec, convallis elementum urna. Orci varius
+						natoque penatibus et magnis dis parturient montes, nascetur
+						ridiculus mus. Aliquam erat volutpat. Aenean tristique nec nisl
+						eget ultricies.
+					</p>
+				</div>
+			</section>
+
+			<!-- Experience -->
+			<section id="experience">
+				<div class="content">
+					<h2>Experience</h2>
+					<nav id="experienceNavigation" class="localNavigation navigation">
+						<ul id="experienceMenu" class="localMenu menu">
+							<li><a onclick="smoothScrolling('education')">Education</a></li>
+							<li><a onclick="smoothScrolling('work')">Work</a></li>
+							<li><a onclick="smoothScrolling('awards')">Awards</a></li>
+						</ul>
+					</nav>
+					<div id="education" class="subsection">
+						<h3>Education</h3>
+						<dl id="educationList" class="experienceList">
+							<dt><a target="_blank" href="https://www.vutbr.cz/en/">Brno University of Technology</a></dt>
+							<dd>2018 - Ongoing</dd>
+							<dt><a target="_blank" href="https://en.wikipedia.org/wiki/Grammar_school">Comenius Grammar school</a></dt>
+							<dd>2014 - 2018</dd>
+						</dl>
+					</div>
+					<div id="work" class="subsection">
+						<h3>Work experience</h3>
+						<dl id="workList" class="experienceList">
+							<dt><a target="_blank" href="https://www.idsoftware.com/en-gb">id Software</a></dt>
+							<dd>2020 - Ongoing</dd>
+							<dt><a target="_blank" href="https://www.nasa.gov/">NASA</a></dt>
+							<dd>2018 - 2020</dd>
+							<dt><a target="_blank" href="https://about.google/">Google</a></dt>
+							<dd>2016 - 2018</dd>
+							<dt><a target="_blank" href="https://www.microsoft.com/">Microsoft</a></dt>
+							<dd>2014 - 2016</dd>
+						</dl>
+					</div>
+					<div id="awards" class="subsection">
+						<h3>Awards</h3>
+						<ul id="awardsList" class="experienceList">
+							<li><a target="_blank" title="Nobel Peace Prize" href="https://en.wikipedia.org/wiki/Nobel_Peace_Prize"><img width="300" height="300" class="awdIcon" src="img/awd/NobelMedal.png" alt="Nobel Peace Prize"></a></li>
+							<li><a target="_blank" title="The George Cross" href="https://en.wikipedia.org/wiki/George_Cross"><img width="170" height="300" class="awdIcon" src="img/awd/GeorgeCross.jpg" alt="The George Cross"></a></li>
+							<li><a target="_blank" title="Turing Award" href="https://en.wikipedia.org/wiki/Turing_Award"><img width="200" height="300" class="awdIcon" src="img/awd/Turing.jpg" alt="Turing Award"></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- Contact -->
+			<section id="contact">
+				<div class="content">
+					<h2>Contact</h2>
+					<address>
+						<dl id="communication" class="contactList">
+							<dt>Email</dt>
+							<dd><a href="mailto:john@doe.en">john@doe.en</a></dd>
+							<dt>Phone</dt>
+							<dd><a href="tel:+421-987-654-321">+421 987 654 321</a></dd>
+						</dl>
+						<dl id="address" class="contactList">
+							<dt>Street</dt>
+							<dd>34th Street</dd>
+							<dt>City</dt>
+							<dd>123 45 Generic City</dd>
+							<dt>Country</dt>
+							<dd>Countrylandia</dd>
+						</dl>
+					</address>
+					<div id="socials">
+						<a target="_blank" href="https://www.facebook.com"><img width="75" height="75" class="socIcon" src="img/soc/facebook.png" alt="Facebook"></a>
+						<a target="_blank" href="https://www.instagram.com"><img width="75" height="75" class="socIcon" src="img/soc/instagram.png" alt="Instagram"></a>
+						<a target="_blank" href="https://www.linkedin.com"><img width="75" height="75" class="socIcon" src="img/soc/linkedin.png" alt="LinkedIn"></a>
+						<a target="_blank" href="https://www.twitter.com"><img width="75" height="75" class="socIcon" src="img/soc/twitter.png" alt="Twitter"></a>
+						<a target="_blank" href="https://www.youtube.com"><img width="75" height="75" class="socIcon" src="img/soc/youtube.png" alt="YouTube"></a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer>
+				<div class="content">
+					Designed by Roman Fulla in 2021<br>
+					Some images were provided by www.flaticon.com & Wikipedia, the free encyclopedia
+				</div>
+			</footer>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
